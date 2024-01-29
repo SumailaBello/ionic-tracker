@@ -1,11 +1,14 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ionic-test2',
+  appId: 'com.checkin',
+  appName: 'Checkin-ionic',
   webDir: 'dist',
   server: {
     androidScheme: 'https'
+  },
+  android: {
+    useLegacyBridge: true,
   }
 };
 
