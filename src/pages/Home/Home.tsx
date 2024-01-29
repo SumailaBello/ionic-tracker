@@ -151,6 +151,7 @@ const Home: React.FC = () => {
               <IonLabel slot='start' >
                 <IonButton size="default" fill='outline'
                   onClick={toggleMode}
+                  color={tracking ? 'danger' : 'primary'}
                 >
                   <IonIcon icon={ tracking ? stop : play} />
                 </IonButton> <br />
