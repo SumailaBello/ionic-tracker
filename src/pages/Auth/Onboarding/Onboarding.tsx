@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, useIonRouter, IonToolbar, IonFooter, IonButton, IonText, IonRow, IonCol, IonIcon, IonRouterContext } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, useIonRouter, IonToolbar, IonFooter, IonButton, IonText, IonRow, IonCol, IonIcon, IonRouterContext, IonImg } from '@ionic/react';
 import React, {useState, useRef, useContext} from 'react';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper/modules';
@@ -44,8 +44,10 @@ const Onboarding: React.FC = () => {
                 >
                 <SwiperSlide>
                     <div className='slides ion-text-center'>
-                        <img src="../../../../src/assets/img/slide1.jpg" alt="slide1" />
-                        <div className='ion-padding-horizontal'>
+                        <img src="/assets/img/slide1.jpg" alt="slide1" />
+                        {/* <img src="../../../" alt="slide1" /> */}
+                        <IonImg src='/assets/img/slide1.jpg'></IonImg>
+                        <div className='ion-padding-horizontal'> 
                             <IonText className='ion-margin'>
                                 <h2>Welcome Aboard Navigation Solution</h2> 
                             </IonText>
@@ -54,7 +56,7 @@ const Onboarding: React.FC = () => {
                 </SwiperSlide>
                 <SwiperSlide style={{backgroundColor: '#FEEFE5'}}>
                     <div className='slides ion-text-center'>
-                        <img src="../../../../src/assets/img/slide2.jpg" alt="slide2" />
+                        <img src="/assets/img/slide2.jpg" alt="slide2" />
                         <div className='ion-padding-horizontal'>
                             <IonText className='ion-margin'>
                                 <h2>Experience Seamless Tracking</h2> 
@@ -64,7 +66,7 @@ const Onboarding: React.FC = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='slides ion-text-center'>
-                        <img src="../../../../src/assets/img/slide3.jpg" alt="slide3" />
+                        <img src="/assets/img/slide3.jpg" alt="slide3" />
                         <IonText className='ion-margin ion-padding-horizontal'>
                             <h2>Efficient Use of Resources and Battery Saver</h2> 
                         </IonText>
